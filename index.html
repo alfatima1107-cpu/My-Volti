@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Мой Вольти — милые 3D-печатные игрушки в детском центре «Лапа счастья». Приходите выбрать очно."
+    />
+    <title>Мой Вольти — 3D-игрушки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="icon" href="./src/logo.jpg" type="image/jpeg" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true">
+      <svg class="cursor__paw" viewBox="0 0 64 78" width="30" height="36">
+        <path
+          fill="#c9897c"
+          d="M17.2 27.4c-3.4-.6-6.6 2.2-6.8 5.4-.3 3.4 2 6.2 5.2 6.4 3.3.2 6.4-2.2 6.8-5.5.4-3.2-1.8-5.7-5.2-6.3z"
+        />
+        <path
+          fill="#d39a8c"
+          d="M29.4 18.2c-2.8-2.2-7.2-1.4-8.6 2.2-1.4 3.5-.1 7.2 3.1 8.4 3.2 1.2 7.1 0 8.4-3.4 1.2-3.2-.2-5.2-2.9-7.2z"
+        />
+        <path
+          fill="#d39a8c"
+          d="M43.6 17.6c-1.6-3.4-6-4.6-9-2.4-2.9 2.1-3.6 6-1.8 8.8 1.8 2.9 5.6 4.2 8.6 2.6 3.1-1.6 3.8-5.2 2.2-9z"
+        />
+        <path
+          fill="#c9897c"
+          d="M54.8 28.8c-.8-3.6-4.4-6-7.6-5.1-3.2.9-5.1 4.4-4.2 7.6.9 3.3 4.4 5.4 7.6 4.5 3.3-.9 5-3.4 4.2-7z"
+        />
+        <path
+          fill="#b87568"
+          d="M16.5 46.2c-1.2 4.8-.2 12.4 5.4 17.2 6.2 5.3 16.2 6.6 23.4 2.2 6.2-3.8 8.8-11 6.6-17.2-1.6-4.6-6.4-7.8-12.2-8.6-6.8-.9-12.2-1.4-17.2-2.6-2.6-.6-5.2 3.6-6 9z"
+        />
+      </svg>
+    </div>
+
+    <header class="site-header glass">
+      <a class="brand" href="#top" aria-label="Мой Вольти — наверх">
+        <span class="brand__mark">
+          <img src="./src/logo.jpg" alt="" width="640" height="640" />
+        </span>
+        <span class="brand__name">Мой Вольти</span>
+      </a>
+      <nav class="nav" aria-label="Навигация">
+        <a href="#about">О нас</a>
+        <a href="#showcase">Витрина</a>
+        <a href="#visit">Визит</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn btn--sm btn--blue" href="https://t.me/timcorgi" target="_blank" rel="noopener noreferrer">Telegram</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Главный экран">
+        <div class="hero__content">
+          <div class="hero__logo-plate">
+            <img
+              class="hero__logo"
+              src="./src/logo.jpg"
+              width="640"
+              height="640"
+              alt="Вольти — белый щенок в синем платке"
+            />
+          </div>
+          <h1 class="hero__title">Игрушки, которые напечатали с любовью</h1>
+          <p class="hero__lead">
+            Милые 3D-персонажи ждут вас в «Лапе счастья» — выбирайте и забирайте сразу.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--blue" href="#contacts">Как добраться</a>
+            <a class="btn btn--gold" href="https://t.me/timcorgi" target="_blank" rel="noopener noreferrer">Telegram</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="section__inner glass-panel">
+          <h2 class="section__title">О магазине</h2>
+          <p class="section__text">
+            «Мой Вольти» делает тёплые 3D-печатные игрушки для детей: аккуратные детали,
+            мягкие формы и характеры, которые хочется обнять. Загляните — покажем,
+            потрогаем вместе и поможем выбрать друга.
+          </p>
+        </div>
+      </section>
+
+      <section id="showcase" class="section reveal">
+        <div class="section__head">
+          <h2 class="section__title">Витрина</h2>
+          <p class="section__text section__text--narrow">
+            Немного наших демо-героев. Цены подскажем при визите — так проще выбрать глазами и руками.
+          </p>
+        </div>
+        <div class="showcase" role="list">
+          <article class="toy-tile glass-panel" role="listitem" aria-label="Место для персонажа">
+            <div class="toy-tile__art" data-swatch="1" aria-hidden="true"></div>
+            <div class="toy-placeholder">
+              <p class="toy-placeholder__title">Заглушка</p>
+              <p class="toy-placeholder__note">Описание появится позже</p>
+            </div>
+          </article>
+          <article class="toy-tile glass-panel" role="listitem" aria-label="Место для персонажа">
+            <div class="toy-tile__art" data-swatch="2" aria-hidden="true"></div>
+            <div class="toy-placeholder">
+              <p class="toy-placeholder__title">Заглушка</p>
+              <p class="toy-placeholder__note">Описание появится позже</p>
+            </div>
+          </article>
+          <article class="toy-tile glass-panel" role="listitem" aria-label="Место для персонажа">
+            <div class="toy-tile__art" data-swatch="3" aria-hidden="true"></div>
+            <div class="toy-placeholder">
+              <p class="toy-placeholder__title">Заглушка</p>
+              <p class="toy-placeholder__note">Описание появится позже</p>
+            </div>
+          </article>
+          <article class="toy-tile glass-panel" role="listitem" aria-label="Место для персонажа">
+            <div class="toy-tile__art" data-swatch="4" aria-hidden="true"></div>
+            <div class="toy-placeholder">
+              <p class="toy-placeholder__title">Заглушка</p>
+              <p class="toy-placeholder__note">Описание появится позже</p>
+            </div>
+          </article>
+          <article class="toy-tile glass-panel" role="listitem" aria-label="Место для персонажа">
+            <div class="toy-tile__art" data-swatch="5" aria-hidden="true"></div>
+            <div class="toy-placeholder">
+              <p class="toy-placeholder__title">Заглушка</p>
+              <p class="toy-placeholder__note">Описание появится позже</p>
+            </div>
+          </article>
+          <article class="toy-tile glass-panel" role="listitem" aria-label="Место для персонажа">
+            <div class="toy-tile__art" data-swatch="6" aria-hidden="true"></div>
+            <div class="toy-placeholder">
+              <p class="toy-placeholder__title">Заглушка</p>
+              <p class="toy-placeholder__note">Описание появится позже</p>
+            </div>
+          </article>
+          <article class="toy-tile glass-panel" role="listitem" aria-label="Место для персонажа">
+            <div class="toy-tile__art" data-swatch="7" aria-hidden="true"></div>
+            <div class="toy-placeholder">
+              <p class="toy-placeholder__title">Заглушка</p>
+              <p class="toy-placeholder__note">Описание появится позже</p>
+            </div>
+          </article>
+          <article class="toy-tile glass-panel" role="listitem" aria-label="Место для персонажа">
+            <div class="toy-tile__art" data-swatch="8" aria-hidden="true"></div>
+            <div class="toy-placeholder">
+              <p class="toy-placeholder__title">Заглушка</p>
+              <p class="toy-placeholder__note">Описание появится позже</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="visit" class="section reveal">
+        <div class="section__inner glass-panel visit">
+          <h2 class="section__title">Зачем зайти очно</h2>
+          <ul class="visit__list">
+            <li>
+              <span class="visit__dot" aria-hidden="true"></span>
+              <div>
+                <strong>Потрогать</strong>
+                <p>Почувствовать вес, фактуру и размер в ладони</p>
+              </div>
+            </li>
+            <li>
+              <span class="visit__dot" aria-hidden="true"></span>
+              <div>
+                <strong>Выбрать глазами</strong>
+                <p>Сравнить цвета и характеры рядом на полке</p>
+              </div>
+            </li>
+            <li>
+              <span class="visit__dot" aria-hidden="true"></span>
+              <div>
+                <strong>Забрать сразу</strong>
+                <p>Новый друг едет с вами в тот же день</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contacts" class="section reveal">
+        <div class="section__inner glass-panel contacts">
+          <h2 class="section__title">Контакты</h2>
+          <p class="section__text">
+            Ждём вас в детском центре «Лапа счастья» — спросите у администратора «Мой Вольти».
+          </p>
+          <address class="contacts__addr">
+            <p>
+              <span class="contacts__label">Адрес</span>
+              ул. Стасовой, д. 4,<br />
+              детский центр «Лапа счастья»
+            </p>
+            <p>
+              <span class="contacts__label">Telegram</span>
+              <a href="https://t.me/timcorgi" target="_blank" rel="noopener noreferrer">@timcorgi</a>
+            </p>
+          </address>
+          <div class="contacts__actions">
+            <a class="btn btn--blue" href="https://t.me/timcorgi" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+            <a
+              class="btn btn--gold"
+              href="https://yandex.ru/maps/-/CXR6ETMJ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Открыть в Яндекс.Картах
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer glass">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--sm">
+          <img src="./src/logo.jpg" alt="" width="640" height="640" />
+        </span>
+        <span>Мой Вольти</span>
+      </div>
+      <p class="footer__meta">
+        ул. Стасовой, д. 4 · «Лапа счастья» ·
+        <a href="https://t.me/timcorgi" target="_blank" rel="noopener noreferrer">@timcorgi</a>
+      </p>
+    </footer>
+
+    <script src="./src/main.js" defer></script>
+  </body>
+</html>
